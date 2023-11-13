@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #002094, #00df16);
+    background-image: linear-gradient(15deg, #002094, white);
 }
 
 main {
@@ -24,7 +24,7 @@ section#login {
     overflow: hidden;
 
     background-color: white;
-    height: 500px;
+    height: 80%;
     width: 300px;
     border-radius: 30px;
     box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.412);
@@ -35,15 +35,48 @@ section#login {
 }
 
 section#login > div#image {
-   background-image: url(../../images/pexels-dmitry-zvolskiy-1544420.jpg);
-    background-size: cover;
+   background-image: url(../../images/LOGO-BRANCO-179w.webp);
+    background-size: contain;
+    background-color: #002094;
     background-position: center;
-    height: 300px;
+    height: 45%;
+
+    background-repeat: no-repeat;
 }
 
   form > div.campo {
     background-color: #002094;
+    border-radius: 6px;
+    margin: 2px 5px;
+    
   }
+
+   div.campo > label {
+    display: none;
+   }
+
+
+   div.campo > span {
+    color: white; 
+    font-size: 2em;
+    width: 40px;
+   }
+
+   div.campo > input {
+    background-color: rgba(225, 221, 255, 0.792);
+    font-size: 1em;
+    width: calc(100% - 18.5%);
+    height: 100%;  
+    border-radius: 6px; 
+    border: 0px;
+    padding: 11px 2px;
+
+    transform: translateY(-4px);
+   }
+     
+   div.campo > input:focus-within {
+    background-color: white;
+   }
 
   form > input[type=submit] {
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.844);
@@ -77,6 +110,7 @@ section#login > div#image {
     border-radius: 5px;
     cursor: pointer;
     border-color: blue;
+    
   }
   form > input[type=submit]#esqueceu:hover {
     background-color: rgb(210, 210, 255);
@@ -85,7 +119,16 @@ section#login > div#image {
 
 section#login > div#form > h1 {
    text-align: center;
+   padding: 8px;
 }
+
+section#login > div#form > p {
+  text-align: center;
+  margin: 8px;
+  display: none;
+}
+
+
 
 section#login > div#form{
     text-align: center;
